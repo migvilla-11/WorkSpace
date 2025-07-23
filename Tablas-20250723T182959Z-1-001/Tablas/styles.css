@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  color: #444;
+  margin-top: 40px;
+}
+
+/* Tabla */
+table.calendario {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #fff;
+}
+
+.calendario th,
+.calendario td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.calendario th {
+  background-color: #eee;
+}
+
+/* Lista simple */
+.calendario-lista {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.calendario-lista li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Lista con divs */
+.calendario-detallado {
+  list-style-type: none;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.calendario-detallado li {
+  margin-bottom: 12px;
+}
+
+.calendario-detallado div {
+  display: flex;
+  align-items: center;
+}
+
+.calendario-detallado p {
+  margin: 0;
+  width: 80px;
+  font-weight: bold;
+  color: #333;
+}
+
+.calendario-detallado span {
+  margin-left: 10px;
+  color: #555;
+}
+
