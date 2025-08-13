@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="tablets.JPEG" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <title>World of English</title>
+    <style>
+        :root {
+            --main-blue: #1e3a8a;
+            /* Navy blue */
+            --light-blue: #e0f2fe;
+            /* Light sky blue */
+            --accent-red: #ef4444;
+            /* Soft red */
+            --light-red: #fee2e2;
+            /* Pale red */
+            --white: #ffffff;
+            --text-color: #1e293b;
+            /* Slate gray */
+            --secondary-accent: #3b82f6;
+            /* Bright blue */
+        }
+
+        body {
+            background-color: var(--light-blue);
+            color: var(--text-color);
+        }
+
+        .navbar {
+            background-color: var(--main-blue) !important;
+        }
+
+        .navbar-brand,
+        .nav-link,
+        .navbar-toggler-icon {
+            color: var(--white) !important;
+        }
+
+        .navbar-brand img {
+            filter: brightness(0) invert(1);
+            /* makes dark logos white-like */
+        }
+
+        .dropdown-menu {
+            background-color: var(--white);
+        }
+
+        .dropdown-item {
+            color: var(--main-blue);
+        }
+
+        .dropdown-item:hover {
+            background-color: var(--secondary-accent);
+            color: var(--white);
+        }
+
+        .form-control {
+            border-color: var(--secondary-accent);
+        }
+
+        .btn-outline-success {
+            color: var(--accent-red);
+            border-color: var(--accent-red);
+        }
+
+        .btn-outline-success:hover {
+            background-color: var(--accent-red);
+            color: var(--white);
+        }
+
+        .accordion-item {
+            background-color: var(--white);
+            border-color: var(--light-red);
+        }
+
+        .accordion-button {
+            background-color: var(--light-blue) !important;
+            color: var(--main-blue) !important;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: var(--secondary-accent) !important;
+            color: var(--white) !important;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+        .accordion-body {
+            background-color: var(--white);
+            color: var(--text-color);
+        }
+
+        .card {
+            background-color: var(--white);
+            border-color: var(--secondary-accent);
+        }
+
+        .card-body {
+            background-color: var(--light-blue);
+        }
+
+        .card-text {
+            color: var(--text-color);
+        }
+
+        .footer {
+            background: url('https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3') no-repeat center center/cover;
+            color: #fff;
+            position: relative;
+            padding: 0;
+            text-align: center;
+        }
+
+        .footer .overlay {
+            background-color: rgba(30, 58, 138, 0.85);
+            /* dark blue overlay */
+            padding: 40px 0;
+        }
+
+        .footer h5 {
+            color: var(--accent-red);
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: var(--light-red);
+        }
+
+        .footer .bottom-bar {
+            background-color: rgba(30, 58, 138, 0.9);
+            padding: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <nav class="navbar">
+                        <a class="navbar-brand" href="#">
+                            <img src="tablets.JPEG" alt="Logo" width="30" height="24">
+                        </a>
+                    </nav>
+                    <a class="navbar-brand" href="">World of English</a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Galería</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Nuestras Secciones
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Juegos Interactivos</a></li>
+                                    <li><a class="dropdown-item" href="#">Canciones y Videos</a></li>
+                                    <li><a class="dropdown-item" href="#">Cuentos Animados</a></li>
+                                    <li><a class="dropdown-item" href="#">Ejercicios Prácticos</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Para Padres</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Contacto: 30012345678</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="tablets.JPEG" class="d-block w-100" alt="Niños jugando y aprendiendo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="ENGLISH.JPEG"
+                            class="d-block w-100" alt="Niños interactuando con tablets">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="vocabulary.JPEG"
+                            class="d-block w-100" alt="Libro de cuentos">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1582218991244-b2586237077a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="d-block w-100" alt="Niña pintando un dibujo">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Introducción
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <strong>World of English nace de la idea de transformar el aprendizaje del inglés en una
+                                aventura emocionante y divertida.</strong>
+                            Creemos que aprender puede ser tan emocionante como jugar, y por eso creamos un espacio
+                            donde el inglés se convierte en una herramienta para soñar, crecer y conectar.
+                            ¡Únete y haz del inglés parte de su mundo!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            Nuestra Visión y Misión
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <strong>✅ Nuestra Misión</strong>
+                            Desarrollar herramientas educativas digitales que hagan del aprendizaje del inglés una
+                            experiencia lúdica y efectiva, construyendo una base sólida del idioma en los niños de
+                            primaria.
+
+                            <strong>✅ Nuestra Visión</strong>
+                            Ser la plataforma líder en el aprendizaje interactivo de inglés para niños en América
+                            Latina,
+                            reconocida por su pedagogía innovadora y su impacto positivo en el desarrollo bilingüe de la
+                            infancia.
+                            <br>
+                            <code>"Aprender jugando, soñar en grande."</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            Características
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <strong>Nos caracterizamos por:</strong>
+                            <li><strong>Contenido didáctico y divertido:</strong> Combinamos educación de alta calidad
+                                con
+                                personajes animados y actividades interactivas que capturan la imaginación de los
+                                niños.</li>
+                            <li><strong>Juegos educativos:</strong> Una gran variedad de juegos que enseñan vocabulario,
+                                gramática y pronunciación de manera natural y sin esfuerzo.</li>
+                            <li><strong>Recursos para padres:</strong> Acceso a un panel de control para seguir el
+                                progreso
+                                del niño, con consejos y actividades para reforzar el aprendizaje en casa.</li>
+                            <li><strong>Seguridad en línea:</strong> Un entorno seguro y libre de publicidad para que
+                                los
+                                niños puedan explorar con total tranquilidad.</li>
+                            <li><strong>Adaptabilidad:</strong> Contenido diseñado para diferentes niveles de edad y
+                                habilidades, asegurando que cada niño aprenda a su propio ritmo.</li>
+
+                            <code>¡La mejor forma de aprender es divirtiéndose!</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 mb-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1596700586938-1a5c64c185ab?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top" alt="Niña jugando con figuras de colores">
+                    <div class="card-body">
+                        <p class="card-text">Miguel Angel Villa Arango
+                            Estudiante de 11-a
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1543789945-812e9b015b6d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top" alt="Niña aprendiendo en una tablet">
+                    <div class="card-body">
+                        <p class="card-text">Daniela Torres.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1596645377017-d2e85a6b0933?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top" alt="Niña sonriendo mientras hace una actividad">
+                    <div class="card-body">
+                        <p class="card-text">Thomas Usuga Rivera.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="footer">
+                <div class="overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <h5>World of English</h5>
+                                <p>
+                                    Un espacio mágico donde el inglés cobra vida.
+                                    ¡Ayudamos a los niños a construir su futuro!
+                                </p>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <h5>Enlaces Rápidos</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Inicio</a></li>
+                                    <li><a href="#">Juegos</a></li>
+                                    <li><a href="#">Cuentos</a></li>
+                                    <li><a href="#">Contacto</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-4 col-md-12 mb-4">
+                                <h5>Contáctanos</h5>
+                                <p><strong>Tel:</strong> +57 301 559 1386</p>
+                                <p><strong>Email:</strong> info@worldofenglish.com</p>
+                                <p><strong>Dirección:</strong> Calle 10 #25-36, Medellín</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom-bar">
+                    © 2025 World of English | Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
